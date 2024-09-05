@@ -1,2 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Трансфер Италия, Аутлет, Аренда авто</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-ed44f4g4g6g6556h5h7
+<body>
+<div class="header">
+    <div class="logo1">
+        <img src="images/new-logo-e.png" class="logo" alt="logo-italtravelcar">
+    </div>
+
+    <div class="header-contact">
+        <div class="telegram">
+            <a class="link-social"  href="https://t.me/itatravelcars"><img class="photo-social-media photo-social-media2" src="images/telegram3.png" alt="telegram"></a>
+        </div>
+        <div class="telegram">
+            <a class="link-social" href="https://api.whatsapp.com/send?phone=393284932384"><img class="photo-social-media photo-social-media2" src="images/whatsup.png" alt="whatsup"></a>
+        </div>
+        <div id="nav-icon2" class="pushmenu">
+            ☰
+        </div>
+    </div>
+
+
+
+    <nav class="sidebar">
+        <div class="text d-flex p-2">
+            <a href="#tel-modal"> Меню Сайта</a>
+            <div id="nav-icon3" class="pushmenu opened">
+                ×
+            </div>
+        </div>
+        <div class="menu-main-menu-container">
+            <ul id="menu-main-menu">
+                <li class="current-menu-item"><a href="#" >Главная</a></li>
+                <li class="menu-parent-item"><a href="#">Услуги<i></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#transfer-with-driver">Трансфер с водителем</a></li>
+                        <li><a href="#rent-car">Аренда машин</a></li>
+                        <li><a href="#transfer-to-outlet">Трансфер в аутлет</a></li>
+                    </ul>
+                </li>
+                <li><a href="#clients">Клиентам</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hidden-overley"></div>
+</div>
+<div class="venice">
+
+    <div class="from-to">
+        <div class="from-to1">
+
+            <div class="from-to3">
+                <div class="anketa-form anketa-form-black">
+                    <label class="text-anketa text-anketa7" for="from">Откуда:</label><br>
+                    <select class="text-text text-anketa7" id="from" name="from" required>
+                        <option value="Болонья">Болонья</option>
+                        <option value="Милан">Милан</option>
+                        <option value="Флоренция">Флоренция</option>
+                        <option value="Парма">Парма</option>
+                        <option value="Бергамо">Бергамо</option>
+                    </select><br><br>
+                </div>
+                <div class="anketa-form anketa-form-black">
+                    <label class="text-anketa text-anketa7" for="to">Куда:</label><br>
+                    <select class="text-text text-anketa7" id="to" name="to" required>
+                        <option value="Милан">Милан</option>
+                        <option value="Болонья">Болонья</option>
+                        <option value="Флоренция">Флоренция</option>
+                        <option value="Рим">Рим</option>
+                        <option value="Парма">Парма</option>
+                        <option value="Венеция">Венеция</option>
+                        <option value="Портофино">Портофино</option>
+                        <option value="озеро Комо">озеро Комо</option>
+                        <option value="Турин">Турин</option>
+                        <option value="Генуя">Генуя</option>
+                        <option value="Пиза">Пиза</option>
+                        <option value="Верона">Верона</option>
+                        <option value="Бергамо">Бергамо</option>
+                    </select><br><br>
+                </div>
+            </div>
+            <div class="from-to2">
+                <button class="button-calculate anketa-form-black text-anketa7" id="calculate">Узнать цену</button>
+                <button class="button-calculate anketa-form-black text-anketa7 link-to-contact2"><a class="link-to-contact" href="#contacts">Связаться с нами</a></button>
+            </div>
+            <div class="price-display" id="price-display" style="display: none;">
+                <p id="price">Цена: -- €</p>
+            </div>
+<!--            <div class="from-to2">-->
+<!--                <button class="button-calculate anketa-form-black text-anketa7 link-to-contact2"><a class="link-to-contact" href="#contacts">Связаться с нами</a></button>-->
+<!--            </div>-->
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--<div class="kind-of-transfers">-->
+
+<!--    <div class="kind-of-transfers1">-->
+<!--        <img class="photo-transfer" src="images/transfer.jpg" alt="transfer">-->
+<!--        <p class="text-about-transfers">Трансфер с водителем</p>-->
+<!--        <a class="link-transfer" href="#transfer-with-driver">Узнать больше</a>-->
+<!--    </div>-->
+
+<!--    <div class="kind-of-transfers1">-->
+<!--        <img class="photo-transfer" src="images/rent-car.jpg" alt="car-rent">-->
+<!--        <p class="text-about-transfers">Аренда машин</p>-->
+<!--        <a class="link-transfer" href="#rent-car">Узнать больше</a>-->
+<!--    </div>-->
+
+<!--    <div class="kind-of-transfers1">-->
+<!--        <img class="photo-transfer" src="images/gucci1.png" alt="shop-of-gucci">-->
+<!--        <p class="text-about-transfers">Трансфер в аутлет</p>-->
+<!--        <a class="link-transfer" href="#transfer-to-outlet">Узнать больше</a>-->
+<!--    </div>-->
+
+<!--</div>-->
+
+<div class="advantages-tranfers" id="clients">
+
+    <div class="advantages-tranfers1">
+        <div class="text-advantages-tranfers">
+            <p class="name">Персональные трансферы</p>
+            <p class="name-of-text">Мы предлагаем комфортные и безопасные трансферы из аэропортов, вокзалов и гостиниц,
+                а также к основным туристическим объектам в самых популярных городах Испании: Мадриде, Барселоне,
+                Валенсии, Аликанте, Мурсии и Андорре.</p>
+        </div>
+        <img class="img-advantages" src="images/personal-transfer.jpg" alt="mercedes-v">
+    </div>
+
+    <div class="advantages-tranfers2">
+        <img class="img-advantages" src="images/shoping-transf.jpg" alt="shoping">
+        <div class="text-advantages-tranfers">
+            <p class="name">Шопинг-сопровождение</p>
+            <p class="name-of-text">Предлагаем трансферы до популярных аутлетов в Барселоне, Мадриде, Малаге и Валенсии,
+                а также услуги сопровождения, чтобы помочь вам с выбором и покупками на месте.</p>
+        </div>
+    </div>
+
+    <div class="advantages-tranfers1">
+        <div class="text-advantages-tranfers">
+            <p class="name">Персонализированные экскурсии</p>
+            <p class="name-of-text">Наши профессиональные гиды помогут вам спланировать поездки к основным туристическим
+                местам, предложат оптимальные маршруты и порекомендуют интересные места для посещения.</p>
+        </div>
+        <img class="img-advantages" src="images/barcelona-1.jpg" alt="venice">
+    </div>
+
+    <div class="advantages-tranfers2">
+        <img class="img-advantages" src="images/help-transfer.jpg" alt="taxi-driver">
+        <div class="text-advantages-tranfers">
+            <p class="name">Полная поддержка в поездках</p>
+            <p class="name-of-text">По вашему желанию мы обеспечим сопровождение на протяжении всего маршрута, дадим
+                рекомендации по лучшим кафе и ресторанам, а также подскажем, в каких районах лучше всего снять
+                апартаменты или отель.</p>
+        </div>
+    </div>
+
+    <div class="advantages-tranfers1">
+        <div class="text-advantages-tranfers">
+            <p class="name">Гибкость и удобство</p>
+            <p class="name-of-text">Мы адаптируемся к вашим потребностям и графику, предлагая гибкость и комфорт в
+                планировании поездок. Вы определяете время и маршрут, а мы берем на себя все остальные заботы.
+            </p>
+        </div>
+        <img class="img-advantages" src="images/transfer-flex.jpg" alt="transfer">
+    </div>
+
+    <div class="advantages-tranfers2">
+        <img class="img-advantages" src="images/comfort.jpg" alt="comfort-mercedes-v">
+        <div class="text-advantages-tranfers">
+            <p class="name">Высокий уровень сервиса</p>
+            <p class="name-of-text">Мы обеспечиваем высочайший стандарт обслуживания, гарантируя надежность и
+                безопасность на каждом этапе вашего путешествия. Наши опытные водители и гиды приложат все усилия,
+                чтобы сделать ваше путешествие максимально комфортным.</p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="reviews" id="transfer-with-driver">
+    <p class="name-driver">Трансфер с водителем</p>
+    <p class="text-about-service-driver1">
+        Наслаждайтесь комфортом и безопасностью с нашей услугой трансфера с водителем. Мы предлагаем вам
+        исключительное качество обслуживания, чтобы ваша поездка была максимально приятной и удобной.
+    </p>
+    <p class="text-about-service-driver1">
+        Почему выбирают нас:
+    </p>
+    <div class="container-of-reviews01">
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews50">
+                <p class="text-about-service-driver2">
+                    Профессионализм: Наши водители – профессионалы с многолетним опытом, знают город и окрестности,
+                    чтобы обеспечить вам лучший маршрут и своевременное прибытие.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews50">
+                <p class="text-about-service-driver2">
+                    Комфорт: Современные, чистые и комфортные автомобили, оснащенные всем необходимым. Независимо от
+                    выбора машины, мы гарантируем высокий уровень комфорта.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews50">
+                <p class="text-about-service-driver2">
+                    Безопасность: Регулярные проверки и контроль технического состояния автомобилей. Ваше спокойствие
+                    и безопасность – наш главный приоритет.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews50">
+                <p class="text-about-service-driver2">
+                    Индивидуальный подход: Учитываем все пожелания и потребности. Трансфер в аэропорт, деловая поездка
+                    или экскурсия – подберем оптимальное решение.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews50">
+                <p class="text-about-service-driver2">
+                    Доступность: Конкурентоспособные цены и гибкие тарифы позволяют вам выбрать наиболее подходящий
+                    вариант для любой поездки.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="rent-car" id="rent-car">-->
+<!--    <p class="name-driver">Аренда машин</p>-->
+<!--    <div class="rent-car1">-->
+<!--        <p>-->
+<!--            Планируете поездку в Италию и нуждаетесь в надежном транспорте? Мы предоставляем автомобили в аренду в-->
+<!--            таких городах, как <span class="weight">Болонья</span>, <span class="weight">Милан</span> и-->
+<!--            <span class="weight">Флоренция</span>.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--            В наличии такие авто: <span class="weight">Mercedes V-class</span>.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="reviews" id="transfer-to-outlet">
+    <p class="name-driver">Автопарк</p>
+<!--    <p class="text-about-service-driver1">-->
+<!--        Мы предлагаем удобные и комфортные трансферы до известных аутлетов из <span class="weight">Болоньи</span>-->
+<!--        , <span class="weight">Милана</span>, и <span class="weight">Флоренции</span>.-->
+<!--        Независимо от вашего местоположения, мы доставим вас в лучшие места для шопинга.-->
+<!--    </p>-->
+    <div class="container-of-reviews01">
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews12">
+                <img class="img-outlet" src="images/mercedes-e.jpg" alt="serrevalle">
+                <p class="text-about-service-driver10">Standard</p>
+                <p class="text-about-service-driver2">
+                    Mercedes E Class, BMW 5 Series или похожие.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews12">
+                <img class="img-outlet" src="images/mercedes-s.jpg" alt="castel-romano">
+                <p class="text-about-service-driver10">First Class</p>
+                <p class="text-about-service-driver2">
+                    Mercedes S Class, BMW 7, Audi A8 или похожие.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews12">
+                <img class="img-outlet" src="images/mercedes-v.jpg" alt="mall">
+                <p class="text-about-service-driver10">First Class Van</p>
+                <p class="text-about-service-driver2">
+                    Mercedes V Class, Volkswagen Multivan или похожие.
+                </p>
+            </div>
+        </div>
+
+<!--        <div class="box-of-reviews">-->
+<!--            <div class="container-of-reviews12">-->
+<!--                <img class="img-outlet" src="images/castel-guelfo20.png" alt="castel-village">-->
+<!--                <p class="text-about-service-driver2">-->
+<!--                    Болонья: Отправляйтесь в Castel Guelfo The Style Outlets и насладитесь разнообразием магазинов и скидок.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="box-of-reviews">-->
+<!--            <div class="container-of-reviews12">-->
+<!--                <img class="img-outlet" src="images/fidenza20.png" alt="fidenza-vilagges">-->
+<!--                <p class="text-about-service-driver2">-->
+<!--                    Фиденца: Посетите Fidenza Village и наслаждайтесь шопингом в стильной и уютной атмосфере.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<div class="reviews background-white">
+    <p class="name-driver color-black">Отзывы</p>
+    <div class="container-of-reviews01">
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews">
+                <p class="text-about-service-driver2">
+                    Поездка из Милана в Болонью прошла замечательно. Пунктуально и очень комфортно.
+                </p>
+                <div class="text-about-service-driver4">
+                    <p>Наталья</p>
+                </div>
+            </div>
+            <div class="container-coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews">
+                <p class="text-about-service-driver2">
+                    Прекрасный трансфер из Милана в Serrevale. Вежливый водитель, комфортный автомобиль. Спасибо за отличный сервис!
+                </p>
+                <div class="text-about-service-driver4">
+                    <p>Анна</p>
+                </div>
+            </div>
+            <div class="container-coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews">
+                <p class="text-about-service-driver2">
+                    Отличный трансфер из Флоренции в The Mall. Всё вовремя, комфортно и профессионально. Прекрасное обслуживание.
+                </p>
+                <div class="text-about-service-driver4">
+                    <p>Иван</p>
+                </div>
+            </div>
+            <div class="container-coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews">
+                <p class="text-about-service-driver2">
+                    Заказывали трансфер из Болоньи во Флоренцию: быстро, комфортно и без лишних хлопот. Рекомендую! Выручили!
+                </p>
+                <div class="text-about-service-driver4">
+                    <p>Екатерина</p>
+                </div>
+            </div>
+            <div class="container-coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+            </div>
+        </div>
+
+        <div class="box-of-reviews">
+            <div class="container-of-reviews">
+                <p class="text-about-service-driver2">
+                    Трансфер из Милана в Фиденцу прошел идеально! Очень довольны, спасибо!
+                </p>
+                <div class="text-about-service-driver4">
+                    <p>Ярослав</p>
+                </div>
+            </div>
+            <div class="container-coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+                <img class="coma" src="images/coma.png" alt="coma">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer" id="contacts">
+    <div class="logo1">
+        <img src="images/new-logo-e.png" class="logo" alt="logo-italtravelcar">
+    </div>
+
+    <div class="footer2">
+        <div class="footer1">
+            <div class="contacts">
+                <p class="contacts1">Контакты</p>
+                <a class="phone phone1" href="policy.html">Политика конфидециальности</a>
+                <a class="phone" href="tel:+393284932384">+39 328 493 23 84</a>
+                <a class="phone" href="mailto:italcar80@gmail.com">italcar80@gmail.com</a>
+            </div>
+            <div class="social-media">
+                <div class="telegram">
+                    <a class="link-social"  href="https://t.me/itatravelcars"><img class="photo-social-media" src="images/telegram3.png" alt="telegram"></a>
+                </div>
+                <div class="telegram">
+                    <a class="link-social" href="https://api.whatsapp.com/send?phone=393284932384"><img class="photo-social-media" src="images/whatsup.png" alt="whatsup"></a>
+                </div>
+                <div class="telegram">
+                    <a class="link-social" href="https://www.instagram.com/ital_travel_car?igsh=bmF0cmJyamZnbTJm&utm_source=qr"><img class="photo-social-media" src="images/instagram1.png" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
